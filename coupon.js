@@ -7,7 +7,7 @@ const generateCoupon =  (amount)=>{
 
     let randomString = [];
     for(let j=0; j<amount; j++){
-        for(let i=0; i<12; i++){
+        for(let i=0; i<11; i++){
             let index = Math.floor(Math.random()*3);
             let [lowerBound, upperBound] = [...boundSets[index]];
             let charNumber = Math.floor(Math.random()* (upperBound - lowerBound) + lowerBound);
