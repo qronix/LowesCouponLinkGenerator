@@ -5,8 +5,8 @@ const generateCoupon =  (amount)=>{
     const couponURL = "https://lowesdigitalcoupon.rewardpromo.com/?z=SPRING&s=";
     //generate 11 random chars and append the url, leader, and trailer
 
-    let randomString = [];
     for(let j=0; j<amount; j++){
+        let randomString = [];
         for(let i=0; i<11; i++){
             let index = Math.floor(Math.random()*3);
             let [lowerBound, upperBound] = [...boundSets[index]];
